@@ -66,6 +66,7 @@ export default function GenrePage() {
     const [show, setShow] = useState(false);
     const [pageNumber, setPageNumber] = useState(1);
     const [genreName, setGenreName] = useState('');
+
     const { data, isPending, error } = useFetch(selectedGenreUrl);
     const [clickedValue, setClickedValue] = useState(false);
     const [clickedId, setClickedId] = useState('');

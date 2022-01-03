@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/useFetch';
 
 export default function MainLanding() {
     const urlMain =
-        'https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1';
+        'https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=3';
     const { data, isPending, error } = useFetch(urlMain);
     const IMG_URL = 'https://image.tmdb.org/t/p/w1280';
 

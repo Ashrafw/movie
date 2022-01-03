@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useFetch } from '../hooks/useFetch';
 import OverlayMovie from './OverlayMovie';
 export default function MovieCards({ url }) {
-    const { data, isPending, error } = useFetch(url);
+    const { data, isPending, error } = useFetch('https://' + url);
     // console.log(url);
     const IMG_URL = 'https://image.tmdb.org/t/p/w1280';
 
