@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import MovieCards from './MovieCards';
 
 const genreObj = [
-    {
-        id: 0,
-        genre: 'Popular',
-        url:
-            'api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1',
-    },
+    // {
+    //     id: 0,
+    //     genre: 'Popular',
+    //     url:
+    //         'api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1',
+    // },
     {
         id: 1,
         genre: 'Action',
