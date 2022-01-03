@@ -46,7 +46,7 @@ export default function Search() {
         }
         if (error) {
             setTimeout(() => {
-                navigate('/');
+                navigate('/movie');
             }, 2000);
         }
     }, [searchid, data, error, count, navigate]);

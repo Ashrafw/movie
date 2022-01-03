@@ -51,7 +51,7 @@ export default function Genres() {
     return genreObj.map((section) => (
         <div className='genres' key={section.genre}>
             <div className='genre-titles'>
-                <Link to={`/genre/${section.id}`}>
+                <Link to={`/movie/genre/${section.id}`}>
                     {section.genre}
                     <div className='explore'>
                         Explore <i className='fas fa-chevron-right'></i>

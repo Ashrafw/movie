@@ -11,32 +11,32 @@ export default function NavBar() {
 
     const handleSubmit = (e) => {
         // e.preventDefault();
-        navigate(`/search/${term}`);
+        navigate(`/movie/search/${term}`);
     };
     return (
         <div className='navbar'>
             <nav className='nav container'>
                 <div className='nav-1'>
-                    <NavLink to={'/'} className='logo'>
+                    <NavLink to={'/movie'} className='logo'>
                         MOVIE<span>Flix</span>
                     </NavLink>
                     <div className='nav-links'>
-                        <NavLink to={'/'} className='nav-link'>
+                        <NavLink to={'/movie'} className='nav-link'>
                             Home
                         </NavLink>
-                        <NavLink to={'/genre/0'} className='nav-link'>
+                        <NavLink to={'/movie/genre/0'} className='nav-link'>
                             Trending
                         </NavLink>
-                        <NavLink to={'/genre/1'} className='nav-link'>
+                        <NavLink to={'/movie/genre/1'} className='nav-link'>
                             Action
                         </NavLink>
-                        <NavLink to={'/genre/5'} className='nav-link'>
+                        <NavLink to={'/movie/genre/5'} className='nav-link'>
                             Romance
                         </NavLink>
                         {/* <NavLink to={'/genre/2'} className='nav-link'>
                             Drama
                         </NavLink> */}
-                        <NavLink to={'/genre/4'} className='nav-link'>
+                        <NavLink to={'/movie/genre/4'} className='nav-link'>
                             Children
                         </NavLink>
                     </div>

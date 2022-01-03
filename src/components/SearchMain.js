@@ -11,7 +11,7 @@ export default function SearchMain() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate(`/search/${term}`);
+        navigate(`/movie/search/${term}`);
     };
     return (
         <div className='search-main'>

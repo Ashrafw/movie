@@ -88,7 +88,7 @@ export default function GenrePage() {
         }
         if (error) {
             setTimeout(() => {
-                navigate('/');
+                navigate('/movie');
             }, 2000);
         }
     }, [id, data, error, pageNumber, navigate, count]);
