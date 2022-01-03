@@ -38,7 +38,7 @@ export default function MainLanding() {
             }
         }, 2000);
         return () => clearInterval(interval);
-    }, [data, count, second]);
+    }, [data, count, second, isPending, error]);
 
     return (
         <div className='movie-landing'>
