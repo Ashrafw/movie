@@ -23,7 +23,7 @@
     transition: 1s ease all;
     /* transform: scale(1); */
     /* opacity: 1; */
-    z-index: 3;
+    z-index: 993;
     /* display: none; */
 }
 .poster .overlay-movie.show {
@@ -51,7 +51,7 @@
     transform: translate(-50%, -55%);
     transition: 1s ease all;
     /* opacity: 1; */
-    z-index: 3;
+    z-index: 993;
     /* display: none; */
 }
 .movie .overlay-movie.show {

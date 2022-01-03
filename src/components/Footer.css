@@ -40,3 +40,15 @@ p {
     margin-left: 20px;
     margin: 0;
 }
+
+@media (max-width: 500px) {
+    .footer a h5 {
+        color: white;
+        margin-right: 15px;
+        font-size: 0.9rem;
+        /* margin-right: 100px; */
+    }
+    .footer p {
+        font-size: 0.85rem;
+    }
+}
