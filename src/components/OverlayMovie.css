@@ -19,6 +19,7 @@
     padding: 20px 15px;
     border-radius: 10px;
     opacity: 0;
+    display: none;
     transition: 1s ease all;
     /* transform: scale(1); */
     /* opacity: 1; */
@@ -28,6 +29,7 @@
 .poster .overlay-movie.show {
     /* display: block;
     display: initial; */
+    display: block;
     opacity: 1;
     transform: translate(-50%, -50%);
 }

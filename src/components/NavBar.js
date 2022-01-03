@@ -24,18 +24,18 @@ export default function NavBar() {
                         <NavLink to={'/movie'} className='nav-link'>
                             Home
                         </NavLink>
-                        <NavLink to={'/movie/genre/0'} className='nav-link'>
+                        {/* <NavLink to={'/movie/genre/0'} className='nav-link'>
                             Trending
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink to={'/movie/genre/1'} className='nav-link'>
                             Action
                         </NavLink>
                         <NavLink to={'/movie/genre/5'} className='nav-link'>
                             Romance
                         </NavLink>
-                        {/* <NavLink to={'/genre/2'} className='nav-link'>
+                        <NavLink to={'/genre/2'} className='nav-link'>
                             Drama
-                        </NavLink> */}
+                        </NavLink>
                         <NavLink to={'/movie/genre/4'} className='nav-link'>
                             Children
                         </NavLink>

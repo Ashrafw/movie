@@ -3,8 +3,12 @@ import './Footer.css';
 export default function Footer() {
     return (
         <div className='footer'>
-            <h5>www.ashrafmedia.com</h5>
-            <p> &copy; copyright 2020</p>
+            <div className='footer-section'>
+                <a href='https://www.ashrafmedia.com'>
+                    <h5>www.ashrafmedia.com</h5>
+                </a>
+                <p> &copy; copyright 2020</p>
+            </div>
         </div>
     );
 }
