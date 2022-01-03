@@ -9,6 +9,7 @@
     display: flex;
     align-items: end;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .footer .footer-section {
@@ -16,7 +17,7 @@
     align-items: center;
     /* justify-content: ; */
     justify-content: space-between;
-    width: 57%;
+    /* width: 57%; */
 }
 
 .footer h5,
@@ -26,13 +27,13 @@ p {
 
 .footer a h5 {
     color: white;
+    margin-right: 30px;
     font-size: 1rem;
     /* margin-right: 100px; */
 }
 .footer a h5:hover {
     color: rgb(232, 0, 0);
     font-size: 1rem;
-    /* margin-right: 100px; */
 }
 
 .footer p {
