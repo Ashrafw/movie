@@ -10,7 +10,7 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         navigate(`/movie/search/${term}`);
     };
     return (
