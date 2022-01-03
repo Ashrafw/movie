@@ -42,7 +42,7 @@ export default function MainLanding() {
             }
         }, 2000);
         return () => clearInterval(interval);
-    }, [data, count, second]);
+    }, [data, isPending, error, count, second]);
 
     // console.log(data);
 
@@ -54,7 +54,7 @@ export default function MainLanding() {
                 <div
                     className='content-landing'
                     id='landing'
-                    style={{ backgroundImage: `url(" ${backdropPath}")` }}
+                    style={{ backgroundImage: `url("${backdropPath}")` }}
                 >
                     <div className='contain'>
                         <div className='details'>
@@ -78,27 +78,51 @@ export default function MainLanding() {
                                 <div className='select-movie'>
                                     <i
                                         onClick={() => setCount(0)}
-                                        className={count === 0 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 0
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                     <i
                                         onClick={() => setCount(1)}
-                                        className={count === 1 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 1
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                     <i
                                         onClick={() => setCount(2)}
-                                        className={count === 2 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 2
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                     <i
                                         onClick={() => setCount(3)}
-                                        className={count === 3 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 3
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                     <i
                                         onClick={() => setCount(4)}
-                                        className={count === 4 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 4
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                     <i
                                         onClick={() => setCount(5)}
-                                        className={count === 5 ? 'fas fa-circle selected' : 'fas fa-circle'}
+                                        className={
+                                            count === 5
+                                                ? 'fas fa-circle selected'
+                                                : 'fas fa-circle'
+                                        }
                                     ></i>
                                 </div>
                             </div>
