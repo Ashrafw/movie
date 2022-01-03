@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/useFetch';
 
 export default function MainLanding() {
     const { data, isPending, error } = useFetch(
-        'https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=2'
+        'https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1'
     );
     const IMG_URL = 'https://image.tmdb.org/t/p/w1280';
 
@@ -16,11 +16,8 @@ export default function MainLanding() {
     const [date, setDate] = useState('');
     const [overview, setOverview] = useState('');
     const [second, setSecond] = useState(0);
-    // const [count, setCount] = useState(Math.floor(Math.random() * (19 - 0 + 1)) + 0);
     const [count, setCount] = useState(0);
     const [ii, setIi] = useState(0);
-    // let i = 0;
-    // setIdValue(data[0]);
 
     useEffect(() => {
         if (data) {
@@ -33,7 +30,6 @@ export default function MainLanding() {
         }
         const interval = setInterval(() => {
             setSecond(second + 1);
-            // console.log(second, ii);
             if (ii < 6) {
                 setCount(ii);
                 setIi(ii + 1);
@@ -42,9 +38,7 @@ export default function MainLanding() {
             }
         }, 2000);
         return () => clearInterval(interval);
-    }, [data, isPending, error, count, second]);
-
-    // console.log(data);
+    }, [data, count, second]);
 
     return (
         <div className='movie-landing'>

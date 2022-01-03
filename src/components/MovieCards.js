@@ -26,7 +26,7 @@ export default function MovieCards({ url }) {
             setDate(data.results[count].release_date);
             setOverview(data.results[count].overview);
         }
-    }, [data]);
+    }, [data, count]);
     return (
         <>
             {error && <h1>{error}</h1>}
