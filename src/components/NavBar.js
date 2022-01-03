@@ -33,7 +33,7 @@ export default function NavBar() {
                         <NavLink to={'/movie/genre/5'} className='nav-link'>
                             Romance
                         </NavLink>
-                        <NavLink to={'/genre/2'} className='nav-link'>
+                        <NavLink to={'/movie/genre/2'} className='nav-link'>
                             Drama
                         </NavLink>
                         <NavLink to={'/movie/genre/4'} className='nav-link'>
