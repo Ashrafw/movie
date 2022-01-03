@@ -7,7 +7,7 @@ const genreObj = [
         id: 0,
         genre: 'Popular',
         url:
-            'https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1',
+            'https://api.themoviedb.org/3/discover/movie?with_genres=28&sort_by=popularity.desc&api_key=9c9a236c211df46e640b24f29796b6c0&page=1',
     },
     {
         id: 1,
